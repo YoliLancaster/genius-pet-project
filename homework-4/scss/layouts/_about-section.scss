@@ -1,0 +1,134 @@
+.about-section {
+  position: relative;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 40px;
+    margin-bottom: 174px;
+  }
+
+  &__about-container {
+    display: block;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 47px;
+    }
+  }
+
+  &__about-description {
+    flex-basis: 95%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 580px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 40px;
+      flex-basis: 55%;
+    }
+  }
+
+  &__text-about {
+    font-size: 18px;
+    line-height: 1.16;
+    margin-bottom: 16px;
+
+    &_nth-child:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: 45%;
+      display: flex;
+      gap: 40px;
+      z-index: 0;
+    }
+  }
+
+  &__procedure-image {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      flex-shrink: 0;
+
+      &_before {
+        margin-right: 203px;
+        margin-top: -43px;
+      }
+
+      &_after {
+        margin-right: -15px;
+        margin-top: 370px;
+      }
+    }
+  }
+
+  &__star {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      animation: stars 3s infinite;
+
+      &_1 {
+        margin-right: -14px;
+        margin-top: 41px;
+      }
+
+      &_2 {
+        margin-right: 80px;
+        margin-top: 272px;
+      }
+    }
+
+    &_3 {
+      display: block;
+      margin-left: 253px;
+      margin-top: 0px;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-left: 500px;
+        margin-top: 100px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        margin-right: 377px;
+        margin-top: 348px;
+      }
+    }
+  }
+}
+
+@keyframes stars {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

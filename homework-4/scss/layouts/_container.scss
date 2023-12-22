@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 743px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 1288px;
+  }
+}
+
+.slider-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 760px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 1288px;
+  }
+}

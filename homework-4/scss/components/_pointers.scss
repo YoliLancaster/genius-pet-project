@@ -1,0 +1,10 @@
+.pointers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.pointers > svg {
+  fill: var(--color-secondary-grey-dark);
+}

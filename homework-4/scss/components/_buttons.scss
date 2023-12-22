@@ -1,0 +1,49 @@
+.call,
+.make-order {
+  background: var(--color-brand-light);
+  border: solid 2px var(--color-brand-light);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  transition: color 0.2s;
+  cursor: pointer;
+  width: 260px;
+}
+
+.call {
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 24px;
+  }
+}
+
+.call:hover {
+  border: solid 2px var(--color-brand-light);
+  background: transparent;
+  color: var(--color-brand-dark);
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 24px;
+  }
+}
+
+.make-order {
+  width: 100%;
+  transition: color 0.2s;
+
+  &__:hover {
+    border: solid 2px var(--color-brand-light);
+    background: transparent;
+  }
+}

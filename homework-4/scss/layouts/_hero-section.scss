@@ -1,0 +1,95 @@
+.hero-section {
+  background-image: url(../images/background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  position: relative;
+  height: 390px;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/background.svg);
+    background-position: top;
+    height: 530px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    height: 687px;
+    background-position: top right;
+    background-size: auto;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) {
+    background-image: url(../images/background-hero@2x.jpg);
+  }
+
+  &__hero-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 0 0;
+    width: 320px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 570px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: flex-start;
+      padding: 70px 0 0;
+      width: 530px;
+      margin: 3px 0 0 106px;
+    }
+  }
+
+  &__text-hero {
+    color: var(--color-brand-dark);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__hero-title {
+    color: var(--color-brand-light);
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 32px;
+    line-height: 0.85;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 96px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 140px;
+      line-height: 0.81;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  &__text-button {
+    font-size: 11px;
+    color: var(--color-secondary-grey-dark);
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+      line-height: 1.5;
+      width: 238px;
+    }
+  }
+}
